@@ -1,0 +1,70 @@
+{
+  "id": "zora",
+  "title": "Zora",
+  "description": "TBD",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "10",
+    "verified": "11",
+    "maximum": "11"
+  },
+  "authors": [
+    {
+      "name": "Syphre"
+    }
+  ],
+  "media": [
+        {
+            "type": "cover",
+            "url": "https://raw.githubusercontent.com/foundryvtt-starfinder/foundryvtt-starfinder/master/src/images/starfinder_cover.webp",
+            "caption": "Starfinder"
+        },
+        {
+            "type": "icon",
+            "url": "images/zora_icon.png",
+            "caption": "Starfinder"
+        },
+        {
+            "type": "setup",
+            "url": "https://raw.githubusercontent.com/foundryvtt-starfinder/foundryvtt-starfinder/master/src/images/starfinder_icon.webp",
+            "name": "Starfinder"
+        }
+    ],
+  "scripts": [
+    "scripts/system-script.js"
+  ],
+  "esmodules": [
+    "scripts/system-module.mjs",
+    "Zora.js"
+  ],
+  "styles": [
+    "styles/system-styles.css"
+  ],
+  "packs": [
+    {
+      "name": "enemies",
+      "label": "Enemies & Creatures",
+      "type": "Actor"
+    },
+    {
+      "name": "skills",
+      "label": "Witch Abilities & Skills",
+      "type": "Item"
+    }
+  ],
+"languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "socket": false,
+  "initiative": "1d8",
+  "gridDistance": 10,
+  "gridUnits": "ft",
+  "primaryTokenAttribute": "resources.health",
+  "url": "https://github.com/GarebearNF/zora",
+  "manifest": "",
+  "download": ""
+}

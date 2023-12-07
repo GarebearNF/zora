@@ -1,0 +1,63 @@
+{
+"Actor": {
+  "types": ["witch", "enemy", "npc"],
+  "templates": {
+    "common": {
+        "stats": {
+          "educ": {
+            "value": 5
+            },
+          "prof": {
+            "value": 5
+            },
+          "train": {
+            "value": 5
+            },
+          "vita": {
+            "value": 5
+            }
+          }
+        },
+    "resources": {
+      "health": {
+        "min": 0,
+        "value": 40,
+        "max": 40
+     	 }
+      }
+	 },
+  "witch": {
+    "templates": ["common", "resources"],
+    "skill-points": {
+        "min": 0,
+        "value": 8,
+        "max": 64
+    },
+	"fon": "",
+	"class": ""
+  },
+  "npc": {
+    "templates": ["common"]
+  },
+  "enemy": {
+    "templates": ["common"]
+  }
+},
+"Item": {
+  "types": ["equipment", "ability"],
+  "templates": {
+    "rarity": {
+      "rarity": "Common",
+      "price": 20
+    }
+  },
+  "weapon": {
+    "templates": ["rarity"],
+    "damage": 5
+  },
+  "spell": {
+    "templates": ["rarity"],
+    "cost": 2
+  }
+}
+}
